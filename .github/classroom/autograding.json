@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "fibonacci",
+      "setup": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y",
+      "run": "cd fibonacci && cargo fmt -- --check && cargo clippy -- -Dwarnings && cargo test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
